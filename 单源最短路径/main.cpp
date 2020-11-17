@@ -61,8 +61,6 @@ void Traceback(int v, int i, vector<int> prev)
 int main()
 {
     int buffer;
-    int row = 1;
-    int col = 1;
     vector<int> temp;
     vector<int> dist(10,0);
     vector<int> prev(10,0);
@@ -89,6 +87,7 @@ int main()
     {
         cout << "源点到 " << i << " 的最短路径: ";
         Traceback(1, i, prev);
+        cout << "\t最短路径长度为：" << dist[i];
         cout << endl;
     }
     return 0;
