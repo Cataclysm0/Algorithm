@@ -20,7 +20,6 @@ void Prim(int n, vector<vector<Type>> c)
         closest[i] = 1;
         s[i] = false;
     }
-
     for (int i = 1; i < n; i++)
     {
         Type min = inf;
@@ -52,7 +51,7 @@ int main()
 {
     int buffer;
     vector<int> temp;
-    vector<vector<int>> c(100, vector<int>(100, 0));
+    vector<vector<int>> c(10, vector<int>(10, 0));
     ifstream readFile("data.txt");
     if (!readFile.is_open()) 
     { 
